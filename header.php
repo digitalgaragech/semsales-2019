@@ -31,7 +31,7 @@
 			<div class="site-header-main">
 				<div class="site-branding">
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/armoiries_attalens.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/armoiries_semsales.svg" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 							<span><?php bloginfo( 'name' ); ?></span></a></h1>
 				</div><!-- .site-branding -->
 
@@ -71,6 +71,6 @@
 		</header><!-- .site-header -->
 		</div>
 </div>
- 
+
  	<div class="site-inner">
  		<div class="site-content">
