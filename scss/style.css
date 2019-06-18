@@ -6275,8 +6275,10 @@ dt, dd {
 figcaption {
   text-align: left; }
 
-.site-branding .site-title img {
-  width: 14rem; }
+.site-branding {
+  text-align: center; }
+  .site-branding .site-title img {
+    width: 14rem; }
 
 .site-header-main {
   display: block; }
