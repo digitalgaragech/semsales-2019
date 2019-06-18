@@ -6512,9 +6512,6 @@ footer#footer {
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
   padding: 0; }
-  @media (min-width: 992px) {
-    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item:last-child {
-      float: right; } }
 
 #mega-menu-item-420 {
   float: right !important; }

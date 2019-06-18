@@ -1,4 +1,4 @@
- 
+
 #mega-menu-wrap-primary #mega-menu-primary {
   text-align: left;
   padding: 0;
@@ -51,7 +51,6 @@
     margin-top: 10px;
   }
 }
-
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item ul.mega-sub-menu {
   padding: 15px 30px 15px 15px;
 }
@@ -69,12 +68,11 @@
   padding: 0;
   &:last-child{
   	@media (min-width: $screen-md-min) {
-		float: right;
+		//float: right;
 	}
   }
 }
 
 #mega-menu-item-420{
-	float: right !important; 
+	float: right !important;
 }
- 
