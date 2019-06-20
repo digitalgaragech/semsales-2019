@@ -37,6 +37,7 @@
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
   padding: 0;
+  display: none;
   @media (min-width: $screen-sm-min) {
     padding:5px;
   }
@@ -58,7 +59,6 @@
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {
   line-height: 18px;
-  display: none;
 }
 #mega-menu-wrap-primary .mega-menu-toggle{
   background-color: transparent;

@@ -6483,7 +6483,8 @@ footer#footer {
       padding: 5px; } }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
-  padding: 0; }
+  padding: 0;
+  display: none; }
   @media (min-width: 768px) {
     #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
       padding: 5px; } }
@@ -6502,8 +6503,7 @@ footer#footer {
   column-count: 2; }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {
-  line-height: 18px;
-  display: none; }
+  line-height: 18px; }
 
 #mega-menu-wrap-primary .mega-menu-toggle {
   background-color: transparent; }
