@@ -121,7 +121,7 @@ add_action('init', 'codex_custom_init');
 
 add_image_size( 'homepage-thumb', 400, 150, true ); //300 pixels wide
 add_image_size( 'insideBanner-size', 1200, 270, true ); // 220 pixels wide by 180 pixels tall, hard crop mode
-add_image_size( 'homepageBanner-size', 1200, 400, true ); // 220 pixels wide by 180 pixels tall, hard crop mode
+add_image_size( 'homepageBanner-size', 1400, 700, true ); // 220 pixels wide by 180 pixels tall, hard crop mode
 
 add_image_size( 'personnel-size', 400, 9999); // 220 pixels wide by 180 pixels tall, hard crop mode
 

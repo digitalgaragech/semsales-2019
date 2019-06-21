@@ -36,13 +36,6 @@ if ( $the_query->have_posts() ) {?>
 
 <div id="carousel-accueil" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
-  <div class="container">
-    <div class="bienvenue">BIENVENUE DANS LA
-      <h1>
-        <?php bloginfo( 'name' ); ?>
-      </h1>
-    </div>
-  </div>
   <?php
 		$n=0;
 		while ( $the_query->have_posts() ) {
