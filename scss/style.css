@@ -6472,7 +6472,8 @@ footer#footer {
     #mega-menu-wrap-primary,
     #mega-menu-wrap-primary #mega-menu-primary,
     #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu {
-      padding: 5px; } }
+      padding: 5px;
+      text-align: center; } }
 
 #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item {
@@ -6486,8 +6487,7 @@ footer#footer {
   padding: 0; }
   @media (min-width: 768px) {
     #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
-      padding: 5px;
-      text-align: center; } }
+      padding: 5px; } }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
   color: #9fb224; }
