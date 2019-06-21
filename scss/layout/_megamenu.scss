@@ -73,11 +73,8 @@
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item{
   padding: 0;
-    &:last-child{
-    	@media (min-width: $screen-md-min) {
-        padding: 0 15px;
-  		//float: right;
-  	}
+  @media (min-width: $screen-md-min) {
+    padding: 0 15px;
   }
 }
 

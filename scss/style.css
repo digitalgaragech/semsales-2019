@@ -5939,7 +5939,7 @@ a,
 .entry-footer a:hover, .entry-footer a:focus,
 .site-info a:hover, .site-info a:focus,
 * a:hover, * a:focus {
-  color: #9fb224;
+  color: #0087CC;
   -webkit-transition: all  0.2s linear;
   -o-transition: all  0.2s linear;
   transition: all  0.2s linear; }
@@ -6242,10 +6242,10 @@ h6 {
   font-weight: 300; }
 
 a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 {
-  color: #9fb224; }
+  color: #0087CC; }
 
 .post-navigation a:hover .post-title, .post-navigation a:focus .post-title {
-  color: #9fb224;
+  color: #0087CC;
   text-decoration: none; }
   .post-navigation a:hover .post-title span, .post-navigation a:focus .post-title span {
     text-decoration: none;
@@ -6415,7 +6415,7 @@ figcaption {
 
 footer#footer {
   clear: both;
-  background-color: #4B4B4B; }
+  background-color: #004162; }
   footer#footer .widget {
     background-color: transparent;
     color: #fff;
@@ -6489,7 +6489,7 @@ footer#footer {
       padding: 5px; } }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
-  color: #9fb224; }
+  color: #0087CC; }
 
 @media (min-width: 768px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
@@ -6519,7 +6519,7 @@ footer#footer {
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
   padding: 0; }
   @media (min-width: 992px) {
-    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item:last-child {
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
       padding: 0 15px; } }
 
 #mega-menu-item-420 {
@@ -6550,7 +6550,7 @@ footer#footer {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         content: "\f111";
-        color: #9fb224;
+        color: #0087CC;
         font-size: 0.5em;
         padding: 0 8px;
         position: relative;
@@ -6601,7 +6601,7 @@ footer#footer {
     display: none; }
 
 .site-presentation {
-  background-color: #9fb224; }
+  background-color: #0087CC; }
   .site-presentation a,
   .site-presentation a:hover,
   .site-presentation p {
