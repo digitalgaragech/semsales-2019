@@ -77,7 +77,7 @@ wp_reset_postdata();
 <div class="homepage-content">
 <div id="primary" class="">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-5 col-md-push-1">
       <div class="site-main">
         <h2>Pilier public</h2>
         <?php
@@ -114,18 +114,18 @@ wp_reset_postdata();
 		}
 		wp_reset_query();  // Restore global post data stomped by the_post().
 		?>
-        <a class="more-articles" href="/pilier_public/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a> 
+        <a class="more-articles" href="/pilier_public/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a>
         </div>
-        
-        
+
+
         <?php query_posts( 'cat=45' ); ?>
         <?php if ( have_posts() ) : ?>
       <div class="site-main">
         <h2>Travaux</h2>
 
-        
-        <?php while ( have_posts() ) : the_post(); ?>  
-        
+
+        <?php while ( have_posts() ) : the_post(); ?>
+
         <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
           <?php the_title(); ?>
           </a></h3>
@@ -148,14 +148,14 @@ wp_reset_postdata();
       <br>
       <?php endif; ?>
     </div>
-    <div class="col-md-4">
-		
-		
-		
-		
-		
-		
-		
+    <div class="col-md-5">
+
+
+
+
+
+
+
       <div class="site-main">
         <h2>Actualités</h2><?php
 		$args=array(
@@ -186,109 +186,17 @@ wp_reset_postdata();
           </p>
           <hr>
         </div>
-        <?php 
-			 endif; 
-			endwhile; 
-         } 
-			
+        <?php
+			 endif;
+			endwhile;
+         }
+
 		wp_reset_query();  // Restore global post data stomped by the_post().
        ?>
         <a class="more-articles" href="/category/actualites/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Toutes les actualités...</a> </div>
-		
-		
-		
-		
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
-      <br>
-      <?php endif; ?>
-    </div>
-    <div class="col-md-4">
-	<?php 
-		query_posts( 'cat=24' );
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		  <div class="site-main site-presentation">
-			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-			  <?php the_title(); ?>
-			  </a></h2>
-			<div class="post">
-			  <?php if( has_post_thumbnail() ) { ?>
-			  <div class="homepage-thumb">
-				<?php the_post_thumbnail(); ?>
-			  </div>
-			  <?}?>
-			  <div class="entry">
-				<?php the_content(); ?>
-			  </div>
-			</div>
-		  </div>
-        <?php 
-		endwhile; 
-		endif; 
-		wp_reset_query(); 
-		
-		query_posts( 'cat=46' );
-		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		  <div class="site-main site-presentation">
-			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-			  <?php the_title(); ?>
-			  </a></h2>
-			<div class="post">
-			  <?php if( has_post_thumbnail() ) { ?>
-			  <div class="homepage-thumb">
-				<?php the_post_thumbnail(); ?>
-			  </div>
-			  <?}?>
-			  <div class="entry">
-				<?php the_content(); ?>
-			  </div>
-			</div>
-		  </div>
-        <?php 
-		endwhile;
-		endif; 
-		wp_reset_query(); 
-		?>
-		
-		
-        <?php // EMPLOI
-		query_posts( 'cat=47' ); ?>
-        <?php if ( have_posts() ) : ?>
-      <div class="site-main">
-        <h2>Emplois</h2>
 
-        
-        <?php while ( have_posts() ) : the_post(); ?>  
-        
-        <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-          <?php the_title(); ?>
-          </a></h3>
-          <small><i>Publié le
-          <?php the_time('j F Y') ?>
-          </i></small>
-          <?php if( has_post_thumbnail() ) { ?>
-          <div class="homepage-thumb">
-            <?php the_post_thumbnail(); ?>
-          </div>
-          <?}?>
-          <p>
-            <?php echo get_excerpt(); ?>
-          </p>
-          <hr>
-        <?php endwhile; ?>
-      </div>
-		<?php endif; 
-		// END EMPLOI
-		?>
-		
-      <!--<div class="site-main">
-        <h2>MÉTÉO LOCALE</h2>
-        <div class="post"><br>
-          <div style="width:100%;height:220px;color:#000;border:0; text-align:center">
-            <iframe height="190" frameborder="0" width="250" scrolling="no" src="http://www.prevision-meteo.ch/services/html/attalens/square" allowtransparency="true"></iframe>
-            <br>
-            <a style="text-decoration:none;font-size:0.75em;" title="Prévisions complètes pour Attalens" href="http://www.prevision-meteo.ch/meteo/localite/attalens">Prévisions complètes pour Attalens</a> </div>
-        </div>
-      </div>-->
+
+
     </div>
   </div>
 </div>
