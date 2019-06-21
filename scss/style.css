@@ -6234,12 +6234,12 @@ h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 1rem;
   margin-bottom: 0;
-  line-height: 1.4rem;
   font-size: 1.5rem;
-  font-weight: 300; }
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em; }
 
 a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 {
   color: #0087CC; }
@@ -6576,7 +6576,7 @@ footer#footer {
       float: left; }
 
 #carousel-accueil {
-  margin-bottom: 50px;
+  margin-bottom: -100px;
   height: calc(100vh - 180px); }
 
 .homepage-content h2,

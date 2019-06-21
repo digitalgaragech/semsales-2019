@@ -2,15 +2,16 @@
 /* Setup */
 html,body {
   /* Change default typefaces here */
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;    
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
 }
+
 /* Copy & Lists */
 #primary, #secondary{
   font-size: 0.9rem;
 }
-p {    
+p {
   font-size: 1em;
   line-height: 1.7em;
   margin-top: 1em;
@@ -31,8 +32,8 @@ ul ol,
 ol ol {
   margin-top: 0;
   margin-bottom: 0;
-}  
-blockquote { 
+}
+blockquote {
   line-height: 1.4rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -48,13 +49,13 @@ h4,
 h5,
 h6 {
   /* Change heading typefaces here */
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   margin-top: 1rem;
   margin-bottom: 0;
-  line-height: 1.4rem;
   font-size: 1.5rem;
-	font-weight: 300;
-  
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+
 }
 a:hover{
 	h1,h2,h3,h4,h5,h6{
@@ -75,7 +76,7 @@ a:hover{
 	font-weight: 300;
 }
 h1,
-h1.entry-title { 
+h1.entry-title {
   font-size: 1.5rem;
   font-weight:500;
   line-height: 3rem;
@@ -109,7 +110,7 @@ h2,
 }
 .entry-content h3,
 h3 {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   font-weight: 600;
 }
 h4 {

@@ -142,7 +142,7 @@ function photo_shortcode( $atts, $content = null ) {
 	$output .= ' <div class="carte__content">' . $content . '</div>';
 	$output .= '</div>';
 	return $output;
-		  
+
 }
 add_shortcode( 'photo', 'photo_shortcode' );
 
@@ -155,7 +155,7 @@ function lien_shortcode( $atts, $content = null ) {
 	$output .= '</a>';
 	$output .= '</div>';
 	return $output;
-		  
+
 }
 add_shortcode( 'lien', 'lien_shortcode' );
 
@@ -241,3 +241,9 @@ function get_excerpt(){
 	$excerpt = $excerpt.'... <a href="' . get_permalink() . '">Continuer la lecture</a>';
 	return $excerpt;
 }
+
+
+function add_google_fonts() {
+  wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Roboto:300,700', false );
+}
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
