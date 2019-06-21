@@ -77,7 +77,7 @@ wp_reset_postdata();
 <div class="homepage-content">
 <div id="primary" class="">
   <div class="row">
-    <div class="col-md-5 col-md-push-1">
+    <div class="col-md-5 col-push-md-1">
       <div class="site-main">
         <h2>Pilier public</h2>
         <?php
@@ -197,7 +197,67 @@ wp_reset_postdata();
 
 
 
+
+      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
+      <br>
+      <?php endif; ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+	<?php
+		query_posts( 'cat=24' );
+		if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		  <div class="site-main site-administration">
+			<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+			  <?php the_title(); ?>
+			  </a></h2>
+			<div class="post">
+			  <?php if( has_post_thumbnail() ) { ?>
+			  <div class="homepage-thumb">
+				<?php the_post_thumbnail(); ?>
+			  </div>
+			  <?}?>
+			  <div class="entry">
+				<?php the_content(); ?>
+			  </div>
+			</div>
+		  </div>
+        <?php
+		endwhile;
+		endif;
+		wp_reset_query();
+		?>
+
     </div>
   </div>
+	<div class="row">
+	    <div class="col-md-12">
+		<?php
+			query_posts( 'cat=24' );
+			if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			  <div class="site-main site-presentation">
+				<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+				  <?php the_title(); ?>
+				  </a></h2>
+				<div class="post">
+				  <?php if( has_post_thumbnail() ) { ?>
+				  <div class="homepage-thumb">
+					<?php the_post_thumbnail(); ?>
+				  </div>
+				  <?}?>
+				  <div class="entry">
+					<?php the_content(); ?>
+				  </div>
+				</div>
+			  </div>
+	        <?php
+			endwhile;
+			endif;
+			wp_reset_query();
+			?>
+
+	    </div>
+	  </div>
 </div>
 <?php get_footer(); ?>
