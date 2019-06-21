@@ -15,9 +15,12 @@
 .site-branding, .site-header-menu, .header-image {
   margin: 0;
 }
-.carousel-inner > .item > img, .carousel-inner > .item > a > img{
-  width: 100%;
-}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: auto;
+    height: calc(100vh - 220px);
+    max-width: none;
+    margin: 0 auto;
+  }
 .site-header-menu{
   display: block;
 }
