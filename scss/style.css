@@ -5892,7 +5892,7 @@ figcaption {
 
 .site {
   margin: 0;
-  background-color: #EAEAEA; }
+  background-color: #F7F7F7; }
 
 .site-content {
   padding: 0; }
@@ -6350,7 +6350,7 @@ figcaption {
 .site-branding {
   text-align: center; }
   .site-branding .site-title img {
-    width: 24rem; }
+    width: 20rem; }
 
 .site-header-main {
   display: block; }
@@ -6454,8 +6454,7 @@ footer#footer {
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover,
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus,
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
-  text-transform: uppercase;
-  font-weight: bold; }
+  text-transform: uppercase; }
   @media (min-width: 992px) and (max-width: 1199px) {
     #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link,
     #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover,
@@ -6519,6 +6518,9 @@ footer#footer {
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item {
   padding: 0; }
+  @media (min-width: 992px) {
+    #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item:last-child {
+      padding: 0 15px; } }
 
 #mega-menu-item-420 {
   float: right !important; }
