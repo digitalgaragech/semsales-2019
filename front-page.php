@@ -77,7 +77,7 @@ wp_reset_postdata();
 <div class="homepage-content">
 <div id="primary" class="">
   <div class="row">
-    <div class="col-md-5 col-md-push-1">
+    <div class="col-md-5 col-md-offset-1">
       <div class="site-main">
         <h2>Pilier public</h2>
         <?php
