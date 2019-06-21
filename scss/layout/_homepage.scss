@@ -1,5 +1,6 @@
 #carousel-accueil{
   margin-bottom: 50px;
+  height: calc(100vh - 180px);
 }
 .homepage-content{
   h2,
@@ -26,7 +27,7 @@
   .post{
     margin: 20px 0 30px;
     &:nth-last-child(2){
-      hr{ 
+      hr{
         display: none;
       }
     }

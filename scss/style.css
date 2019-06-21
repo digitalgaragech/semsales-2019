@@ -6573,7 +6573,8 @@ footer#footer {
       float: left; }
 
 #carousel-accueil {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  height: calc(100vh - 180px); }
 
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
