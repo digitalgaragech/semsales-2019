@@ -6449,7 +6449,7 @@ footer#footer {
 #mega-menu-wrap-primary #mega-menu-primary {
   text-align: left;
   padding: 0;
-  background-color: #F7F7F7 !important; }
+  background-color: #dddddd !important; }
   @media (min-width: 992px) {
     #mega-menu-wrap-primary #mega-menu-primary {
       background-color: transparent !important;
