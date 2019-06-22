@@ -97,7 +97,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-            <?php get_excerpt(140, 'content'); ?>
+            <?php get_excerpt(20); ?>
           </p>
           <hr>
         </div>
@@ -130,7 +130,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-						<?php get_excerpt(20, 'content'); ?>
+						<?php get_excerpt(20); ?>
           </p>
           <hr>
         <?php endwhile; ?>
@@ -174,7 +174,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-            <?php get_excerpt(140, 'content'); ?>
+            <?php get_excerpt(20); ?>
           </p>
           <hr>
         </div>
