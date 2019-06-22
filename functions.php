@@ -238,7 +238,7 @@ function get_excerpt(){
 	$excerpt = strip_tags($excerpt);
 	$excerpt = substr($excerpt, 0, 20);
 	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-	$excerpt = $excerpt.'... <a href="' . get_permalink() . '">Continuer la lecture</a>';
+	$excerpt = $excerpt.'... <a href="' . get_permalink() . '">Continuer la D lecture</a>';
 	return $excerpt;
 }
 
