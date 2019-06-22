@@ -233,7 +233,7 @@ update_option('image_default_link_type','');
 
 
 function get_excerpt($limit, $source = null){
-    $excerpt = $source == "content" ? the_content() : the_excerpt();
+    $excerpt = $source == "content" ? get_the_content() : get_the_excerpt();
     $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
     $excerpt = strip_shortcodes($excerpt);
     $excerpt = strip_tags($excerpt);
