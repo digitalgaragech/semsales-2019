@@ -55,6 +55,7 @@ h6 {
   font-family: "Raleway", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 1.5em;
+  letter-spacing: 1px;
 }
 a:hover{
 	h1,h2,h3,h4,h5,h6{
@@ -85,8 +86,8 @@ h1.entry-title {
 	h2,
 	.widget h2.widget-title,
 	.widget h2 {
-	  font-size: 1rem;
-		  line-height: 1.4rem;
+	  font-size: 1.5rem;
+	  line-height: 2rem;
 	  margin-top: 1rem;
 	  text-transform: uppercase;
 	}

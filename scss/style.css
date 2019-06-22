@@ -5899,7 +5899,7 @@ figcaption {
 
 .site-main {
   background: #ffffff;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   margin-bottom: 1rem; }
 
 .site-main:after {
@@ -6239,7 +6239,8 @@ h6 {
   font-size: 1.5rem;
   font-family: "Raleway", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  letter-spacing: 1px; }
 
 a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 {
   color: #0087CC; }
@@ -6266,8 +6267,8 @@ h1.entry-title {
 .homepage-content h2,
 .homepage-content .widget h2.widget-title,
 .homepage-content .widget h2 {
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   margin-top: 1rem;
   text-transform: uppercase; }
 
