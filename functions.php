@@ -232,7 +232,7 @@ update_option('image_default_link_type','');
 
 
 function get_excerpt(){
-	$excerpt = get_the_content();
+	$excerpt = the_content();
 	return $excerpt;
 }
 
