@@ -6589,7 +6589,10 @@ footer#footer {
     margin-bottom: -70px; } }
 
 .homepage-content__actus-pilier {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .homepage-content__actus-pilier .site-main {
     height: 100%; }
 
