@@ -76,7 +76,7 @@ wp_reset_postdata();
         <?php
 		$args=array(
 			'post_status' => 'publish',
-			'posts_per_page' => 4,
+			'posts_per_page' => 3,
 			'caller_get_posts'=> 1,
 			 'cat'=>5
 		);
@@ -152,7 +152,7 @@ wp_reset_postdata();
         <h2>Actualités</h2><?php
 		$args=array(
 		  'post_status' => 'publish',
-		  'posts_per_page' => 4,
+		  'posts_per_page' => 3,
 		  'caller_get_posts'=> 1,
 		   'cat'=>4
 		);
