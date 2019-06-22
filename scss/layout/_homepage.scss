@@ -1,6 +1,7 @@
 #carousel-accueil{
-  margin-bottom: -100px;
-  height: calc(100vh - 180px);
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: -100px;
+  }
 }
 .homepage-content{
   h2,

@@ -6575,9 +6575,9 @@ footer#footer {
       padding: 0 10px 0 0;
       float: left; }
 
-#carousel-accueil {
-  margin-bottom: -100px;
-  height: calc(100vh - 180px); }
+@media (min-width: 768px) {
+  #carousel-accueil {
+    margin-bottom: -100px; } }
 
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
