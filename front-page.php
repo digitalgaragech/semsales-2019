@@ -130,7 +130,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-            <?php the_excerpt(); ?>
+						<?php get_excerpt(20); ?>
           </p>
           <hr>
         <?php endwhile; ?>
