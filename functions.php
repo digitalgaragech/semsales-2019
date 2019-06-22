@@ -231,17 +231,18 @@ add_filter('tiny_mce_before_init', 'change_paste_as_text', 1, 2);
 update_option('image_default_link_type','');
 
 
-function get_excerpt(){
-	$excerpt = the_content();
-	$excerpt = preg_replace(" ([.*?])",'',$excerpt);
-	$excerpt = strip_shortcodes($excerpt);
-	$excerpt = strip_tags($excerpt);
-	$excerpt = substr($excerpt, 0, 20);
-	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-	$excerpt = $excerpt.'... <a href="' . get_permalink() . '">Continuer la D lecture</a>';
-	return $excerpt;
-}
 
+function get_excerpt($limit, $source = null){
+    $excerpt = $source == "content" ? get_the_content() : get_the_excerpt();
+    $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
+    $excerpt = strip_shortcodes($excerpt);
+    $excerpt = strip_tags($excerpt);
+    $excerpt = substr($excerpt, 0, $limit);
+    $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+    $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+    $excerpt = $excerpt.'... <a href="'.get_permalink($post->ID).'">more</a>';
+    return $excerpt;
+}
 
 
 
