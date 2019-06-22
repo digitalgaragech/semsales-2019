@@ -243,6 +243,8 @@ function get_excerpt(){
 }
 
 
+
+
 function add_google_fonts() {
   wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Raleway:300', false );
 }

@@ -6586,11 +6586,11 @@ footer#footer {
 
 @media (min-width: 992px) {
   #carousel-accueil {
-    margin-bottom: -80px; } }
+    margin-bottom: -70px; } }
 
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
-  margin: 10px 0; }
+  margin: 10px 0 40px; }
 
 .homepage-content .homepage-thumb {
   padding: 10px 0; }
