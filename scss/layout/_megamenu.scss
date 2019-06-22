@@ -2,7 +2,9 @@
 #mega-menu-wrap-primary #mega-menu-primary {
   text-align: left;
   padding: 0;
+  background-color: $gray-background !important;
   @media (min-width: $screen-md-min) {
+    background-color: transparent !important;
     margin-left: 100px;
   }
 
@@ -43,12 +45,12 @@
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
   color: $color-theme;
+  background-color: $gray-background-active;
 }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
   @media (min-width: $screen-sm-min) {
     padding: 25px 50px;
-    margin-top: 10px;
   }
 }
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item ul.mega-sub-menu {
