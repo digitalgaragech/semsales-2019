@@ -69,7 +69,7 @@ wp_reset_postdata();
 <div class="site-content">
 <div class="homepage-content">
 <div id="primary" class="">
-  <div class="row">
+  <div class="row homepage-content__actus-pilier">
     <div class="col-md-5 col-md-offset-1">
       <div class="site-main">
         <h2>Pilier public</h2>
@@ -110,35 +110,6 @@ wp_reset_postdata();
         </div>
 
 
-        <?php query_posts( 'cat=45' ); ?>
-        <?php if ( have_posts() ) : ?>
-      <div class="site-main">
-        <h2>Travaux</h2>
-
-
-        <?php while ( have_posts() ) : the_post(); ?>
-
-        <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-          <?php the_title(); ?>
-          </a></h3>
-          <small><i>Publié le
-          <?php the_time('j F Y') ?>
-          </i></small>
-          <?php if( has_post_thumbnail() ) { ?>
-          <div class="homepage-thumb">
-            <?php the_post_thumbnail(); ?>
-          </div>
-          <?}?>
-          <p>
-						<?php echo get_excerpt(140); ?>
-          </p>
-          <hr>
-        <?php endwhile; ?>
-      </div>
-		<?php endif; ?>
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
-      <br>
-      <?php endif; ?>
     </div>
     <div class="col-md-5">
       <div class="site-main">
@@ -182,12 +153,55 @@ wp_reset_postdata();
 
 
 
-
-      <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
-      <br>
-      <?php endif; ?>
     </div>
 </div>
+
+
+<div class="row">
+	<div class="col-md-5 col-md-offset-1">
+
+			<?php query_posts( 'cat=45' ); ?>
+			<?php if ( have_posts() ) : ?>
+		<div class="site-main">
+			<h2>Travaux</h2>
+
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+			<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+				<?php the_title(); ?>
+				</a></h3>
+				<small><i>Publié le
+				<?php the_time('j F Y') ?>
+				</i></small>
+				<?php if( has_post_thumbnail() ) { ?>
+				<div class="homepage-thumb">
+					<?php the_post_thumbnail(); ?>
+				</div>
+				<?}?>
+				<p>
+					<?php echo get_excerpt(140); ?>
+				</p>
+				<hr>
+			<?php endwhile; ?>
+		</div>
+	<?php endif; ?>
+		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
+		<br>
+		<?php endif; ?>
+	</div>
+	<div class="col-md-5">
+
+
+		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
+		<br>
+		<?php endif; ?>
+	</div>
+</div>
+
+
+
+
 <div class="row">
     <div class="col-md-12">
 	<?php
