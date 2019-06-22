@@ -236,7 +236,7 @@ function get_excerpt(){
 	$excerpt = preg_replace(" ([.*?])",'',$excerpt);
 	$excerpt = strip_shortcodes($excerpt);
 	$excerpt = strip_tags($excerpt);
-	$excerpt = substr($excerpt, 0, 50);
+	$excerpt = substr($excerpt, 0, 20);
 	$excerpt = substr($excerpt, 0, strripos($excerpt, " "));
 	$excerpt = $excerpt.'... <a href="' . get_permalink() . '">Continuer la lecture</a>';
 	return $excerpt;
