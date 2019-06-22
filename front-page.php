@@ -74,12 +74,11 @@ wp_reset_postdata();
       <div class="site-main">
         <h2>Pilier public</h2>
         <?php
-		$type = 'pilier_public';
 		$args=array(
-		  'post_type' => $type,
-		  'post_status' => 'publish',
-		  'posts_per_page' => 3,
-		  'caller_get_posts'=> 1
+			'post_status' => 'publish',
+			'posts_per_page' => 4,
+			'caller_get_posts'=> 1,
+			 'cat'=>5
 		);
 		$my_query = null;
 		$my_query = new WP_Query($args);
@@ -155,7 +154,7 @@ wp_reset_postdata();
 		  'post_status' => 'publish',
 		  'posts_per_page' => 4,
 		  'caller_get_posts'=> 1,
-		   'cat'=>1
+		   'cat'=>4
 		);
 		$my_query = null;
 		$my_query = new WP_Query($args);
