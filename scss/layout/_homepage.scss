@@ -4,6 +4,12 @@
   }
 }
 .homepage-content{
+  &__actus-pilier{
+    margin-bottom: 20px;
+    .site-main{
+      height: 100%;
+    }
+  }
   h2,
   .widget h2.widget-title {
     margin: 10px 0 40px;

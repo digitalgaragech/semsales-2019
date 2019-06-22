@@ -6588,6 +6588,11 @@ footer#footer {
   #carousel-accueil {
     margin-bottom: -70px; } }
 
+.homepage-content__actus-pilier {
+  margin-bottom: 20px; }
+  .homepage-content__actus-pilier .site-main {
+    height: 100%; }
+
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
   margin: 10px 0 40px; }
