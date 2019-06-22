@@ -97,7 +97,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-            <?php echo get_excerpt(125); ?>
+            <?php echo get_excerpt(140); ?>
           </p>
           <hr>
         </div>
@@ -130,7 +130,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-						<?php echo get_excerpt(125); ?>
+						<?php echo get_excerpt(140); ?>
           </p>
           <hr>
         <?php endwhile; ?>
@@ -141,13 +141,6 @@ wp_reset_postdata();
       <?php endif; ?>
     </div>
     <div class="col-md-5">
-
-
-
-
-
-
-
       <div class="site-main">
         <h2>Actualités</h2><?php
 		$args=array(
@@ -174,7 +167,7 @@ wp_reset_postdata();
           </div>
           <?}?>
           <p>
-            <?php echo get_excerpt(125); ?>
+            <?php echo get_excerpt(140); ?>
           </p>
           <hr>
         </div>
