@@ -96,9 +96,7 @@ wp_reset_postdata();
             <?php the_post_thumbnail( 'homepage-thumb' ); ?>
           </div>
           <?}?>
-          <p>
             <?php echo get_excerpt(100); ?>
-          </p>
           <hr>
         </div>
         <?php
@@ -137,9 +135,7 @@ wp_reset_postdata();
             <?php the_post_thumbnail( 'homepage-thumb' ); ?>
           </div>
           <?}?>
-          <p>
             <?php echo get_excerpt(100); ?>
-          </p>
           <hr>
         </div>
         <?php
@@ -179,9 +175,7 @@ wp_reset_postdata();
 					<?php the_post_thumbnail(); ?>
 				</div>
 				<?}?>
-				<p>
 					<?php echo get_excerpt(100); ?>
-				</p>
 				<hr>
 			<?php endwhile; ?>
 		</div>
