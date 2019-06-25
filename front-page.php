@@ -154,29 +154,16 @@ wp_reset_postdata();
 
 
 <div class="row">
-	<div class="col-md-5 col-md-offset-1">
+	<div class="col-xs-12">
 
-			<?php query_posts( 'cat=45' ); ?>
+			<?php query_posts( 'cat=6' ); ?>
 			<?php if ( have_posts() ) : ?>
 		<div class="site-main">
 			<h2>Travaux</h2>
-
-
 			<?php while ( have_posts() ) : the_post(); ?>
-
 			<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 				<?php the_title(); ?>
 				</a></h3>
-				<small><i>Publié le
-				<?php the_time('j F Y') ?>
-				</i></small>
-				<?php if( has_post_thumbnail() ) { ?>
-				<div class="homepage-thumb">
-					<?php the_post_thumbnail(); ?>
-				</div>
-				<?}?>
-					<?php echo get_excerpt(100); ?>
-				<hr>
 			<?php endwhile; ?>
 		</div>
 	<?php endif; ?>
