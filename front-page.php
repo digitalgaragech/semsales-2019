@@ -166,20 +166,14 @@ wp_reset_postdata();
 		?>
 		<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
-		<h2 class="entry-title"><?php the_title() ?></h2>
+		<a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+		<?php $current_rank = get_post_meta( $post_id, 'lien_utile', true); ?>
+
 		<?php endwhile ?>
 				    <?php wp_reset_postdata(); ?>
 		<?php endif ?>
 	</div>
-	<div class="col-md-5">
-
-
-		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
-		<br>
-		<?php endif; ?>
-	</div>
 </div>
-
 
 
 
@@ -239,5 +233,15 @@ wp_reset_postdata();
 
 	    </div>
 	  </div>
+		<div class="row">
+			<div class="col-md-5">
+
+
+				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
+				<br>
+				<?php endif; ?>
+			</div>
+		</div>
+
 </div>
 <?php get_footer(); ?>
