@@ -156,20 +156,29 @@ wp_reset_postdata();
 <div class="row">
 	<div class="col-xs-12">
 
-			<?php query_posts( 'cat=6' ); ?>
-			<?php if ( have_posts() ) : ?>
-		<div class="site-main">
-			<h2>Travaux</h2>
-			<?php while ( have_posts() ) : the_post(); ?>
-			<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-				<?php the_title(); ?>
-				</a></h3>
-			<?php endwhile; ?>
-		</div>
-	<?php endif; ?>
-		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
-		<br>
+		<?php
+		$args = array(
+		    'meta_key'   => 'lien_utile'
+		);
+
+		$the_query = new WP_Query( $args ); ?>
+
+		<?php if ( $the_query->have_posts() ) : ?>
+
+		    <!-- the loop -->
+		    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		        <h2><?php the_title(); ?></h2>
+		        <?php the_content(); ?>
+
+		    <?php endwhile; ?>
+		    <!-- end of the loop -->
+
+		    <!-- pagination here -->
+
+		    <?php wp_reset_postdata(); ?>
+
 		<?php endif; ?>
+
 	</div>
 	<div class="col-md-5">
 
