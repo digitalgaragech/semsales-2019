@@ -155,24 +155,27 @@ wp_reset_postdata();
 
 <div class="row">
 	<div class="col-xs-12">
+		<div class="liens_utiles"
+			<?php
+			// Custom query
+			$args = array(
+				'post_type' => 'page',
+		    'meta_key'   => 'lien_utile'
+			);
+			$wp_query = new WP_Query( $args );
+			?>
+			<?php if ( have_posts() ) : ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+			<?php $lien_utile = get_post_meta( $post->ID, 'lien_utile', true); ?>
+				<div class="liens_utiles-item">
+					<img src="<?=$lien_utile?>">
+					<a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+				</div>
 
-		<?php
-		// Custom query
-		$args = array(
-			'post_type' => 'page',
-	    'meta_key'   => 'lien_utile'
-		);
-		$wp_query = new WP_Query( $args );
-		?>
-		<?php if ( have_posts() ) : ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-		<a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
-		<?php $lien_utile = get_post_meta( $post->ID, 'lien_utile', true); ?>
-		<img src="<?=$lien_utile?>">
-
-		<?php endwhile ?>
-				    <?php wp_reset_postdata(); ?>
-		<?php endif ?>
+			<?php endwhile ?>
+					    <?php wp_reset_postdata(); ?>
+			<?php endif ?>
+		</div>
 	</div>
 </div>
 
