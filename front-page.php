@@ -157,28 +157,19 @@ wp_reset_postdata();
 	<div class="col-xs-12">
 
 		<?php
+		// Custom query
 		$args = array(
-		    'meta_key'   => 'lien_utile'
+			'post_type' => 'page',
+	    'meta_key'   => 'lien_utile'
 		);
-
-		$the_query = new WP_Query( $args ); ?>
-
-		<?php if ( $the_query->have_posts() ) : ?>
-
-		    <!-- the loop -->
-		    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		        <h2><?php the_title(); ?></h2>
-		        <?php the_content(); ?>
-
-		    <?php endwhile; ?>
-		    <!-- end of the loop -->
-
-		    <!-- pagination here -->
-
-		    <?php wp_reset_postdata(); ?>
-
-		<?php endif; ?>
-
+		$wp_query = new WP_Query( $args );
+		?>
+		<?php if ( have_posts() ) : ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+		<h2 class="entry-title"><?php the_title() ?></h2>
+		<?php endwhile ?>
+				    <?php wp_reset_postdata(); ?>
+		<?php endif ?>
 	</div>
 	<div class="col-md-5">
 
