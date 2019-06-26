@@ -167,7 +167,8 @@ wp_reset_postdata();
 		<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 		<a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
-		<?php $current_rank = get_post_meta( $post_id, 'lien_utile', true); ?>
+		<?php $lien_utile = get_post_meta( $post_id, 'lien_utile', true);
+		echo $lien_utile; ?>
 
 		<?php endwhile ?>
 				    <?php wp_reset_postdata(); ?>
