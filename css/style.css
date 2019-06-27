@@ -6642,3 +6642,11 @@ footer#footer {
 
 .post-list img {
   padding: 5px 0; }
+
+.liens_utiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .liens_utiles-item {
+    display: -ms-grid;
+    display: grid; }
