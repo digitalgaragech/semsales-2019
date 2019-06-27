@@ -6557,6 +6557,14 @@ footer#footer {
 
 .liens_utiles {
   display: flex;
-  color: #fff; }
+  justify-content: center; }
   .liens_utiles-item {
-    display: grid; }
+    display: grid;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff; }
+    .liens_utiles-item img {
+      margin: 0 auto;
+      width: 80px;
+      padding: 10px; }
