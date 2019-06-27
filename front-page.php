@@ -176,21 +176,7 @@ wp_reset_postdata();
 					    <?php wp_reset_postdata(); ?>
 			<?php endif ?>
 		</div>
-
-
-		<?php query_posts( 'cat=6' ); ?>
-			<?php if ( have_posts() ) : ?>
-		<div class="site-main">
-			<h2>Travaux</h2>
-			<?php while ( have_posts() ) : the_post(); ?>
-			<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-				<?php the_title(); ?>
-				</a></h3>
-			<?php endwhile; ?>
-		</div>
-	<?php endif; ?>
-		<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
-		<br>
+		
 	</div>
 </div>
 
