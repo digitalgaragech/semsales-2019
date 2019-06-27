@@ -70,7 +70,7 @@ wp_reset_postdata();
 <div class="homepage-content">
 <div id="primary" class="">
   <div class="row homepage-content__actus-pilier">
-    <div class="col-md-5 col-md-offset-1">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
       <div class="site-main">
         <h2>Pilier public</h2>
         <?php
@@ -109,7 +109,7 @@ wp_reset_postdata();
 
 
     </div>
-    <div class="col-md-5">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
       <div class="site-main">
         <h2>Actualités</h2><?php
 		$args=array(
@@ -155,7 +155,7 @@ wp_reset_postdata();
 
 <div class="row">
 	<div class="col-xs-12">
-		<div class="liens_utiles"
+		<div class="liens_utiles">
 			<?php
 			// Custom query
 			$args = array(
