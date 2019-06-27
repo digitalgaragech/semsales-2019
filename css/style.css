@@ -6626,7 +6626,7 @@ footer#footer {
   .site-presentation a,
   .site-presentation a:hover,
   .site-presentation p {
-    color: #ffffff; }
+    color: #fff; }
   .site-presentation .homepage-thumb {
     margin: 10px -24px; }
     .site-presentation .homepage-thumb img {
@@ -6646,7 +6646,8 @@ footer#footer {
 .liens_utiles {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  color: #fff; }
   .liens_utiles-item {
     display: -ms-grid;
     display: grid; }

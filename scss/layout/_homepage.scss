@@ -66,14 +66,16 @@
   .entry>.p1:first-child{
     margin-bottom: 20px;
   }
-} 
+}
 .post-list{
 	img{
 		padding:5px 0;
 	}
 }
+
 .liens_utiles{
   display: flex;
+  color: #fff;
   &-item{
     display: grid;
   }

@@ -233,13 +233,12 @@ wp_reset_postdata();
 			endwhile;
 			endif;
 			wp_reset_query();
-			?>
+						?>
 
 	    </div>
 	  </div>
 		<div class="row">
 			<div class="col-md-5">
-
 
 				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
 				<br>
