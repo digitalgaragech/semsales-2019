@@ -6647,7 +6647,17 @@ footer#footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .liens_utiles-item {
     display: -ms-grid;
-    display: grid; }
+    display: grid;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff; }
+    .liens_utiles-item img {
+      margin: 0 auto;
+      width: 80px;
+      padding: 10px; }
