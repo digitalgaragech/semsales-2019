@@ -176,11 +176,39 @@ wp_reset_postdata();
 					    <?php wp_reset_postdata(); ?>
 			<?php endif ?>
 		</div>
-		
+
 	</div>
 </div>
 
-
+<div class="row homepage-content__actus-pilier">
+			<?php
+	$args=array(
+		'post_status' => 'publish',
+		'posts_per_page' => 1,
+		'caller_get_posts'=> 1,
+	  'cat'=>7
+	);
+	$my_query = null;
+	$my_query = new WP_Query($args);
+	if( $my_query->have_posts() ) {
+		while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+				<?php if( has_post_thumbnail() ) { ?>
+				<div class="homepage-thumb">
+					<?php the_post_thumbnail( 'homepage-thumb' ); ?>
+				</div>
+				<?}?>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+				<h3><?php the_title(); ?></h3>
+				<?php echo get_excerpt(100); ?>
+			</div>
+			<?php
+		endwhile;
+	}
+	wp_reset_query();  // Restore global post data stomped by the_post().
+	?>
+</div>
 
 <div class="row">
     <div class="col-md-12">
