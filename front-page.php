@@ -201,7 +201,7 @@ wp_reset_postdata();
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
 				<h3><?php the_title(); ?></h3>
-				<?php echo get_excerpt(100); ?>
+				<?php echo the_content(); ?>
 			</div>
 			<?php
 		endwhile;
