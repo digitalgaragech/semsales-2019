@@ -6597,7 +6597,8 @@ footer#footer {
     height: 100%; }
 
 .homepage-content .site-main {
-  position: relative; }
+  position: relative;
+  padding-bottom: 4rem; }
 
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
@@ -6609,13 +6610,14 @@ footer#footer {
 .homepage-content a.more-articles {
   white-space: nowrap;
   background-color: rgba(200, 200, 200, 0.2);
-  padding: 1rem 1.5rem;
-  margin: 0 -1.5rem -1rem;
+  padding: 1rem;
+  margin: 0 -1rem;
   display: block;
   font-size: 14px;
   font-weight: bold;
   position: absolute;
-  bottom: 0; }
+  bottom: 1rem;
+  width: calc(100% - 2rem); }
   .homepage-content a.more-articles:hover {
     background-color: rgba(200, 200, 200, 0.3);
     text-decoration: none;
