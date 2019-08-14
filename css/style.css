@@ -6596,6 +6596,9 @@ footer#footer {
   .homepage-content__actus-pilier .site-main {
     height: 100%; }
 
+.homepage-content .site-main {
+  position: relative; }
+
 .homepage-content h2,
 .homepage-content .widget h2.widget-title {
   margin: 10px 0 40px; }
@@ -6610,7 +6613,9 @@ footer#footer {
   margin: 0 -1.5rem -1rem;
   display: block;
   font-size: 14px;
-  font-weight: bold; }
+  font-weight: bold;
+  position: absolute;
+  bottom: 0; }
   .homepage-content a.more-articles:hover {
     background-color: rgba(200, 200, 200, 0.3);
     text-decoration: none;
