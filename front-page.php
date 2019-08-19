@@ -196,7 +196,7 @@ wp_reset_postdata();
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
 				<?php if( has_post_thumbnail() ) { ?>
 				<div class="homepage-thumb">
-					<?php the_post_thumbnail( 'homepage-thumb' ); ?>
+					<?php the_post_thumbnail(); ?>
 				</div>
 				<?}?>
 			</div>
