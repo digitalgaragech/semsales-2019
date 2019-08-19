@@ -6631,25 +6631,6 @@ footer#footer {
   .homepage-content .post:nth-last-child(2) hr {
     display: none; }
 
-.site-presentation {
-  background-color: #0087CC; }
-  .site-presentation a,
-  .site-presentation a:hover,
-  .site-presentation p {
-    color: #fff; }
-  .site-presentation .homepage-thumb {
-    margin: 10px -24px; }
-    .site-presentation .homepage-thumb img {
-      width: 100%; }
-  .site-presentation a.more-articles {
-    background-color: rgba(255, 255, 255, 0.2); }
-    .site-presentation a.more-articles:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
-  .site-presentation .post {
-    margin-bottom: 0; }
-  .site-presentation .entry > .p1:first-child {
-    margin-bottom: 20px; }
-
 .post-list img {
   padding: 5px 0; }
 
