@@ -169,7 +169,7 @@ wp_reset_postdata();
 			<?php $lien_utile = get_post_meta( $post->ID, 'lien_utile', true); ?>
 				<div class="liens_utiles-item">
 				<a href="<?php the_permalink(); ?>">
-					<img src="<?=$lien_utile?>"><?php the_title() ?>
+					<img src="<?=$lien_utile?>"><br><?php the_title() ?>
 					</a>
 				</div>
 
