@@ -4,6 +4,9 @@
   }
 }
 .homepage-content{
+  &-white{
+    background-color: #fff;
+  }
   &__actus-pilier{
     margin-bottom: 20px;
     display: flex;

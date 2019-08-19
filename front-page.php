@@ -241,7 +241,7 @@ wp_reset_postdata();
 				<div class="row">
 			    <div class="col-md-12">
 						<?php
-							query_posts( 'cat=24' );
+							query_posts( 'cat=8' );
 								if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 								  <div class="site-main site-presentation">
 									<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">

@@ -6588,6 +6588,9 @@ footer#footer {
   #carousel-accueil {
     margin-bottom: -70px; } }
 
+.homepage-content-white {
+  background-color: #fff; }
+
 .homepage-content__actus-pilier {
   margin-bottom: 20px;
   display: -webkit-box;
