@@ -212,58 +212,34 @@ wp_reset_postdata();
 					?>
 				</div>
 				<div class="row">
-			    <div class="col-md-12">
 					<?php
-						query_posts( 'cat=24' );
-						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						  <div class="site-main site-administration">
-							<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-							  <?php the_title(); ?>
-							  </a></h2>
-							<div class="post">
-							  <?php if( has_post_thumbnail() ) { ?>
-							  <div class="homepage-thumb">
-								<?php the_post_thumbnail(); ?>
-							  </div>
-							  <?}?>
-							  <div class="entry">
-								<?php the_content(); ?>
-							  </div>
+					$args=array(
+						'post_status' => 'publish',
+						'posts_per_page' => 1,
+						'caller_get_posts'=> 1,
+					  'cat'=>8
+					);
+					$my_query = null;
+					$my_query = new WP_Query($args);
+					if( $my_query->have_posts() ) {
+						while ($my_query->have_posts()) : $my_query->the_post(); ?>
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+								<?php if( has_post_thumbnail() ) { ?>
+								<div class="homepage-thumb">
+									<?php the_post_thumbnail(); ?>
+								</div>
+								<?}?>
 							</div>
-						  </div>
-				        <?php
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+								<h3><?php the_title(); ?></h3>
+								<?php echo the_content(); ?>
+							</div>
+							<?php
 						endwhile;
-						endif;
-						wp_reset_query();
-						?>
-			    </div>
-			  </div>
-				<div class="row">
-			    <div class="col-md-12">
-						<?php
-							query_posts( 'cat=8' );
-								if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-								  <div class="site-main site-presentation">
-									<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-									  <?php the_title(); ?>
-									  </a></h2>
-									<div class="post">
-									  <?php if( has_post_thumbnail() ) { ?>
-									  <div class="homepage-thumb">
-										<?php the_post_thumbnail(); ?>
-									  </div>
-									  <?}?>
-									  <div class="entry">
-										<?php the_content(); ?>
-									  </div>
-									</div>
-								  </div>
-						        <?php
-								endwhile;
-								endif;
-								wp_reset_query(); ?>
-			    </div>
-			  </div>
+					}
+					wp_reset_query();  // Restore global post data stomped by the_post().
+					?>
+				</div>
 	    </div>
 	  </div>
 		<div class="homepage-content-gray">
