@@ -270,7 +270,7 @@ wp_reset_postdata();
 			<div class="site-inner">
 				<div class="row">
 					<div class="col-md-4">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
+						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
 						<br>
 						<?php endif; ?>
 					</div>
