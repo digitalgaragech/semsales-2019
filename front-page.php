@@ -65,10 +65,10 @@ if ( $the_query->have_posts() ) {?>
 }
 wp_reset_postdata();
 ?>
-<div class="site-inner">
 <div class="site-content">
 <div class="homepage-content">
 	<div class="homepage-content-gray">
+	<div class="site-inner">
   <div class="row homepage-content__actus-pilier">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
       <div class="site-main">
@@ -181,7 +181,9 @@ wp_reset_postdata();
 	</div>
 </div>
 </div>
+</div>
 <div class="homepage-content-white">
+<div class="site-inner">
 
 <div class="row homepage-content__admin">
 			<?php
@@ -277,6 +279,6 @@ wp_reset_postdata();
 				<?php endif; ?>
 			</div>
 		</div>
+				</div>
 
-		</div>
 <?php get_footer(); ?>
