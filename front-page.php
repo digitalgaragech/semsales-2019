@@ -168,8 +168,9 @@ wp_reset_postdata();
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php $lien_utile = get_post_meta( $post->ID, 'lien_utile', true); ?>
 				<div class="liens_utiles-item">
-					<img src="<?=$lien_utile?>">
-					<a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+				<a href="<?php the_permalink(); ?>">
+					<img src="<?=$lien_utile?>"><?php the_title() ?>
+					</a>
 				</div>
 
 			<?php endwhile ?>
@@ -180,7 +181,7 @@ wp_reset_postdata();
 	</div>
 </div>
 
-<div class="row homepage-content__actus-pilier">
+<div class="row homepage-content__admin">
 			<?php
 	$args=array(
 		'post_status' => 'publish',

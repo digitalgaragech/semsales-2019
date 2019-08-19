@@ -6663,8 +6663,9 @@ footer#footer {
     text-align: center;
     padding: 20px;
     margin: 10px;
-    background-color: #fff; }
+    background-color: #fff;
+    width: calc(100% / 6); }
     .liens_utiles-item img {
       margin: 0 auto;
-      width: 80px;
+      height: 64px;
       padding: 10px; }
