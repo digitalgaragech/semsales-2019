@@ -78,6 +78,9 @@ h2{
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+.homepage-content h2, .homepage-content .widget h2.widget-title {
+    margin: 1rem 0 0;
+}
 h3 {
   font-size: 0.8rem;
   font-weight: bold;
