@@ -225,7 +225,7 @@ wp_reset_postdata();
 						while ($my_query->have_posts()) : $my_query->the_post(); ?>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
 								<h3><?php the_title(); ?></h3>
-								<?php echo get_excerpt(100); ?>
+								<?php echo get_excerpt(200); ?>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
 								<?php if( has_post_thumbnail() ) { ?>

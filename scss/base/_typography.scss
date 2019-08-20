@@ -12,8 +12,8 @@ html,body {
   font-size: 0.9rem;
 }
 p {
-  font-size: 1em;
-  line-height: 1.7em;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   margin-top: 1em;
   margin-bottom: 0;
 }
@@ -109,16 +109,18 @@ h2,
 .entry-content h3,
 h3 {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 h4 {
-    font-size: 0.4713333333333332rem;
+    font-size: 1rem;
+		color:$color-theme;
+    font-weight: 700;
 }
 h5 {
-    font-size: 0.3535rem;
+    font-size: 0.9rem;
 }
 h6 {
-	font-size: 0.0675rem;
+	font-size: 0.8rem;
 }
 /* Tables */
 table {
