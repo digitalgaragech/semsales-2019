@@ -250,6 +250,6 @@ function get_excerpt( $count ) {
 }
 
 function add_google_fonts() {
-  wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Raleway:300', false );
+  wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css?family=Raleway:300,700', false );
 }
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
