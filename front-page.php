@@ -152,7 +152,7 @@ wp_reset_postdata();
 			    </div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12">
+					<div class="col-xs-10 col-xs-offset-1">
 						<div class="liens_utiles">
 							<?php
 							// Custom query
