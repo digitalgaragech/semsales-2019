@@ -6566,7 +6566,12 @@ footer#footer {
     margin-bottom: -70px; } }
 
 .homepage-content-white {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 50px 0;
+  margin: 40px 0 50px; }
+
+.homepage-content__admin {
+  margin-bottom: 50px; }
 
 .homepage-content__actus-pilier {
   margin-bottom: 20px;
@@ -6616,7 +6621,8 @@ footer#footer {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 20px; }
   .liens_utiles-item {
     display: -ms-grid;
     display: grid;

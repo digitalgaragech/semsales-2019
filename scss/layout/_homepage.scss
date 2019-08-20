@@ -6,6 +6,11 @@
 .homepage-content{
   &-white{
     background-color: #fff;
+    padding: 50px 0;
+    margin: 40px 0 50px;
+  }
+  &__admin{
+    margin-bottom: 50px
   }
   &__actus-pilier{
     margin-bottom: 20px;
@@ -60,6 +65,7 @@
 .liens_utiles{
   display: flex;
   justify-content: center;
+  margin-top: 20px;
   &-item{
     display: grid;
     text-align: center;
