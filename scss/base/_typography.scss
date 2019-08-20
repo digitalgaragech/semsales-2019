@@ -57,8 +57,11 @@ h6 {
   line-height: 1.5em;
   letter-spacing: 1px;
 }
-.widget ul li{
-  line-height: inherit !important; 
+.widget{
+  font-size: 0.9rem;
+  ul li{
+    line-height: inherit !important;
+  }
 }
 a:hover{
 	h1,h2,h3,h4,h5,h6{

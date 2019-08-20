@@ -6242,8 +6242,10 @@ h6 {
   line-height: 1.5em;
   letter-spacing: 1px; }
 
-.widget ul li {
-  line-height: inherit !important; }
+.widget {
+  font-size: 0.9rem; }
+  .widget ul li {
+    line-height: inherit !important; }
 
 a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 {
   color: #0087CC; }
