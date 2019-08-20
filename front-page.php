@@ -202,7 +202,7 @@ wp_reset_postdata();
 								<?}?>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
-								<h3><?php the_title(); ?></h3>
+								<h2><?php the_title(); ?></h2>
 								<?php echo the_content(); ?>
 							</div>
 							<?php
@@ -224,7 +224,7 @@ wp_reset_postdata();
 					if( $my_query->have_posts() ) {
 						while ($my_query->have_posts()) : $my_query->the_post(); ?>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
-								<h3><?php the_title(); ?></h3>
+								<h2><?php the_title(); ?></h2>
 								<?php echo get_excerpt(200); ?>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
