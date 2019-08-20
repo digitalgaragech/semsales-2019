@@ -6261,7 +6261,7 @@ h2 {
   text-transform: uppercase; }
 
 .homepage-content h2, .homepage-content .widget h2.widget-title {
-  margin: 1rem 0 0; }
+  margin: 1rem 0 0 !important; }
 
 h3 {
   font-size: 0.8rem;
