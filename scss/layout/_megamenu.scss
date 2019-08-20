@@ -15,9 +15,7 @@
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus,
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
   text-transform: uppercase;
-  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  	font-size: 12px;
-  }
+	font-size: 0.9rem;
 }
 
 #mega-menu-wrap-primary,
