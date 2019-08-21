@@ -68,7 +68,7 @@ wp_reset_postdata();
 <div class="site-content">
 	<div class="homepage-content">
 		<div class="homepage-content-gray">
-			<div class="site-inner">
+			<div class="site-inner container-fluid">
 			  <div class="row homepage-content__actus-pilier">
 			    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 			      <div class="site-main">
@@ -181,7 +181,7 @@ wp_reset_postdata();
 			</div>
 		</div>
 		<div class="homepage-content-white">
-			<div class="site-inner">
+			<div class="site-inner container-fluid">
 				<div class="row homepage-content__admin">
 					<?php
 					$args=array(
@@ -243,7 +243,7 @@ wp_reset_postdata();
 	    </div>
 	  </div>
 		<div class="homepage-content-gray">
-			<div class="site-inner">
+			<div class="site-inner container-fluid">
 				<div class="row">
 					<div class="col-md-4">
 						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
