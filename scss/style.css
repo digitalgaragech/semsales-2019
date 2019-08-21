@@ -5900,7 +5900,8 @@ figcaption {
 .site-main {
   background: #ffffff;
   padding: 1rem 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-radius: 2px; }
 
 .site-main:after {
   content: '';
@@ -6634,7 +6635,8 @@ footer#footer {
     width: calc(100% / 6); }
     .liens_utiles-item a {
       padding: 10px;
-      text-decoration: none; }
+      text-decoration: none;
+      border-radius: 2px; }
       .liens_utiles-item a:hover {
         background-color: #0087CC;
         color: #fff;
