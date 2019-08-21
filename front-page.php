@@ -70,7 +70,7 @@ wp_reset_postdata();
 		<div class="homepage-content-gray">
 			<div class="site-inner">
 			  <div class="row homepage-content__actus-pilier">
-			    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+			    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 			      <div class="site-main">
 			        <h2>Pilier public</h2>
 			        <?php
@@ -109,7 +109,7 @@ wp_reset_postdata();
 
 
 				    </div>
-				    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+				    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 				      <div class="site-main">
 				        <h2>Actualités</h2><?php
 						$args=array(
@@ -194,14 +194,14 @@ wp_reset_postdata();
 					$my_query = new WP_Query($args);
 					if( $my_query->have_posts() ) {
 						while ($my_query->have_posts()) : $my_query->the_post(); ?>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<?php if( has_post_thumbnail() ) { ?>
 								<div class="homepage-thumb">
 									<?php the_post_thumbnail(); ?>
 								</div>
 								<?}?>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<h2><?php the_title(); ?></h2>
 								<?php echo the_content(); ?>
 							</div>
@@ -223,11 +223,11 @@ wp_reset_postdata();
 					$my_query = new WP_Query($args);
 					if( $my_query->have_posts() ) {
 						while ($my_query->have_posts()) : $my_query->the_post(); ?>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-lg-offset-1">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<h2><?php the_title(); ?></h2>
 								<?php echo get_excerpt(600); ?>
 							</div>
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 								<?php if( has_post_thumbnail() ) { ?>
 								<div class="homepage-thumb">
 									<?php the_post_thumbnail(); ?>
