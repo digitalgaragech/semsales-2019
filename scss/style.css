@@ -6569,7 +6569,10 @@ footer#footer {
 .homepage-content-white {
   background-color: #fff;
   padding: 50px 0;
-  margin: 40px 0 50px; }
+  margin: 0 0 50px; }
+
+.homepage-content-gray {
+  margin: 0 0 40px; }
 
 .homepage-content__admin {
   margin-bottom: 50px; }
