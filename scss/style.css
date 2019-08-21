@@ -6637,10 +6637,21 @@ footer#footer {
       text-decoration: none; }
       .liens_utiles-item a:hover {
         background-color: #0087CC;
-        color: #fff; }
+        color: #fff;
+        -webkit-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out; }
         .liens_utiles-item a:hover img {
-          -webkit-filter: grayscale(100%) brightness(500%);
-          filter: grayscale(100%) brightness(500%); }
+          -webkit-filter: grayscale(100%) brightness(250%);
+          filter: grayscale(100%) brightness(250%);
+          -webkit-transition: -webkit-filter 0.5s ease-out;
+          transition: -webkit-filter 0.5s ease-out;
+          -o-transition: filter 0.5s ease-out;
+          transition: filter 0.5s ease-out;
+          transition: filter 0.5s ease-out, -webkit-filter 0.5s ease-out; }
     .liens_utiles-item img {
       margin: 0 auto;
       height: 64px;
