@@ -6636,7 +6636,11 @@ footer#footer {
       padding: 10px;
       text-decoration: none; }
       .liens_utiles-item a:hover {
-        background-color: #fff; }
+        background-color: #0087CC;
+        color: #fff; }
+        .liens_utiles-item a:hover img {
+          -webkit-filter: grayscale(100%) brightness(500%);
+          filter: grayscale(100%) brightness(500%); }
     .liens_utiles-item img {
       margin: 0 auto;
       height: 64px;

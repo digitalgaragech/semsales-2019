@@ -77,7 +77,11 @@
       padding: 10px;
       text-decoration: none;
       &:hover{
-        background-color: #fff;
+        background-color: $color-theme;
+        color:#fff;
+        img{
+          filter: grayscale(100%) brightness(500%);
+        }
       }
     }
     img{
