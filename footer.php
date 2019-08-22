@@ -10,6 +10,7 @@
  */
 ?>
 </div>
+</div>
 <div class="homepage-content-gray">
 <div class="site-inner container-fluid">
   <div class="row">
@@ -29,7 +30,6 @@
       <?php endif; ?>
     </div>
   </div>
-</div>
 </div>
 </div>
 </div>
