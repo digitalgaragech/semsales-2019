@@ -241,26 +241,5 @@ wp_reset_postdata();
 					?>
 				</div>
 	    </div>
-	  </div>
-		<div class="homepage-content-gray">
-			<div class="site-inner container-fluid">
-				<div class="row">
-					<div class="col-md-4">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil gauche')) : ?>
-						<br>
-						<?php endif; ?>
-					</div>
-					<div class="col-md-4">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil centre')) : ?>
-						<br>
-						<?php endif; ?>
-					</div>
-					<div class="col-md-4">
-						<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Accueil droite')) : ?>
-						<br>
-						<?php endif; ?>
-					</div>
-				</div>
-			</div>
 
 <?php get_footer(); ?>
