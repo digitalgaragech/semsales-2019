@@ -24,7 +24,7 @@ get_header(); ?>
             <div class="carousel-inner" role="listbox">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<?php	if ( has_post_thumbnail() ) { ?>
-			<?php 
+			<?php
 			$n++;
 			if($n=='1'){?>
 				<div class="item active"><?
@@ -33,15 +33,15 @@ get_header(); ?>
 				<div class="item"><?
 				$nbrSlides = 'plus';
 			}
-			
-			
+
+
 			the_post_thumbnail( 'insideBanner-size' ); ?>
                 </div>
-            
-            
+
+
 	<?php } ?>
-    
-    
+
+
 <?php endwhile; ?>
     <?php if($nbrSlides == 'plus'){ ?>
 			<a class="left carousel-control" href="#carousel-content" role="button" data-slide="prev">
@@ -53,12 +53,12 @@ get_header(); ?>
 				<span class="sr-only">Next</span>
 			</a>
     <?php } ?>
-    
+
             </div>
         </div>
 
 
-    
+
 
 <?php endif; ?>
 
@@ -66,16 +66,16 @@ get_header(); ?>
 
 
 
- 	<div class="site-inner">
+ 	<div class="site-inner container-fluid">
  		<div class="site-content">
 
 		<div id="actualite">
 
 		<?php if ( have_posts() ) : ?>
-        
-        
-        
-        
+
+
+
+
 			<header class="entry-header">
 				<?php
 					the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>

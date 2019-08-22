@@ -19,7 +19,7 @@ get_header();?>
 </div>
 <?php } ?>
 
- 	<div class="site-inner">
+ 	<div class="site-inner container-fluid">
  		<div class="site-content">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

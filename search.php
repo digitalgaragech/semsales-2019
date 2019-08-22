@@ -12,7 +12,7 @@ get_header();?>
 </div></div>
 
 
- 	<div class="site-inner searchResults">
+ 	<div class="site-inner container-fluid searchResults">
  		<div class="site-content">
 		<?php if ( have_posts() ) : ?>
 		<header>
@@ -46,4 +46,3 @@ get_header();?>
 		?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-

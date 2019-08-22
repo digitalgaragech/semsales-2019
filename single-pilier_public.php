@@ -17,7 +17,7 @@
  </div>
  <?php } ?>
 
- 	<div class="site-inner">
+ 	<div class="site-inner container-fluid">
  		<div class="site-content">
  	<header class="entry-header">
  		<?php the_title( '<h1 class="entry-title"><a href="/pilier_public/">Pilier public</a> : ', '</h1>' ); ?>
@@ -30,12 +30,12 @@
 		while ( have_posts() ) : the_post();
 
 			// Include the single post content template.
-			
+
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                
+
                     <div class="row post-list">
-                   
+
                         <div class="col-sm-12">
                 		<small><i>Publié le <?php the_time('j F Y') ?></i></small>
                         <?php twentysixteen_excerpt(); ?>
@@ -44,19 +44,19 @@
                 </div>
             </article><!-- #post-## -->
             <hr>
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
 			<?
-			
+
 
 			// End of the loop.
-			
-			
-			
+
+
+
 		endwhile;
 		?>
 
