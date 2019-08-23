@@ -180,24 +180,24 @@ if (function_exists('register_sidebar')) {
 		'id' => 'accueil_gauche',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h2 class="offscreen">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="offscreen">',
+		'after_title' => '</h3>',
 	));
   register_sidebar(array(
 		'name'=> 'Accueil centre',
 		'id' => 'accueil_centre',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h2 class="offscreen">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="offscreen">',
+		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
 		'name'=> 'Accueil droite',
 		'id' => 'accueil_droite',
 		'before_widget' => '<li id="%1$s" class="widget %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h2 class="offscreen">',
-		'after_title' => '</h2>',
+		'before_title' => '<h3 class="offscreen">',
+		'after_title' => '</h3>',
 	));
 	register_sidebar(array(
 		'name'=> 'Contenu du bas 3',
