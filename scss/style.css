@@ -6247,7 +6247,8 @@ h6 {
 #footer .widget h2 {
   color: #fff;
   font-weight: 700;
-  text-transform: none; }
+  text-transform: none;
+  font-size: 0.9rem; }
 
 #footer a {
   color: #fff; }
