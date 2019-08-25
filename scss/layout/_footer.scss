@@ -30,6 +30,13 @@ footer#footer{
 	}
 	.iva_bh_shortcode .iva_bhp_hours_row, .ivabh-businesshours .iva_bhp_hours_row {
     display: block;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.2 );
 	}
+	.widget_text .iva_bh_shortcode span.days, .ivabh-businesshours span.days {
+    width: 70%;
+	}
+	.widget_text .ivabh-businesshours span.hours, .ivabh-businesshours span.hours {
+    width: 30%;
+	}
+
 }

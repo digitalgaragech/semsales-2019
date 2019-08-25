@@ -6440,7 +6440,11 @@ footer#footer {
         padding: 3px 0 2px; }
   footer#footer .iva_bh_shortcode .iva_bhp_hours_row, footer#footer .ivabh-businesshours .iva_bhp_hours_row {
     display: block;
-    border-bottom: 1px solid #eeeeee; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  footer#footer .widget_text .iva_bh_shortcode span.days, footer#footer .ivabh-businesshours span.days {
+    width: 70%; }
+  footer#footer .widget_text .ivabh-businesshours span.hours, footer#footer .ivabh-businesshours span.hours {
+    width: 30%; }
 
 #mega-menu-wrap-primary #mega-menu-primary {
   text-align: left;
