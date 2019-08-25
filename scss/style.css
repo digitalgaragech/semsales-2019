@@ -6413,11 +6413,11 @@ figcaption {
 
 footer#footer {
   clear: both;
-  background-color: #004162; }
+  background-color: #004162;
+  padding: 3rem 0; }
   footer#footer .widget {
     background-color: transparent;
     color: #fff;
-    margin: 3rem 0;
     padding: 0; }
     footer#footer .widget p,
     footer#footer .widget dl {
