@@ -6246,8 +6246,10 @@ h6 {
 #footer .widget h2 {
   color: #fff;
   font-weight: 700;
-  font-size: 0.9rem;
   text-transform: none; }
+
+#footer a {
+  color: #fff; }
 
 .widget {
   font-size: 0.9rem !important; }
@@ -6436,6 +6438,9 @@ footer#footer {
       footer#footer .widget dl dd {
         line-height: 1.2em;
         padding: 3px 0 2px; }
+  footer#footer .iva_bh_shortcode .iva_bhp_hours_row, footer#footer .ivabh-businesshours .iva_bhp_hours_row {
+    display: block;
+    border-bottom: 1px solid #eeeeee; }
 
 #mega-menu-wrap-primary #mega-menu-primary {
   text-align: left;

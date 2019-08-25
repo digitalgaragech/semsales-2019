@@ -19,7 +19,7 @@ footer#footer{
 				&:after{
   					display: block;
   					content: '';
-					clear:both; 
+					clear:both;
 				}
 			}
 			dt,dd{
@@ -27,5 +27,9 @@ footer#footer{
 				padding:3px 0 2px;
 			}
 		}
+	}
+	.iva_bh_shortcode .iva_bhp_hours_row, .ivabh-businesshours .iva_bhp_hours_row {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
 	}
 }
