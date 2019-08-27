@@ -6596,6 +6596,14 @@ footer#footer {
       margin-top: -5px;
       padding: 0 10px 0 0;
       float: left; }
+  .widget .liens_utiles-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px; }
+    .widget .liens_utiles-item a img {
+      max-width: 40px;
+      margin-right: 20px; }
 
 @media (min-width: 992px) {
   #carousel-accueil {
