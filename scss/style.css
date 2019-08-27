@@ -6655,7 +6655,7 @@ footer#footer {
 .post-list img {
   padding: 5px 0; }
 
-.liens_utiles {
+.homepage-content .liens_utiles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6663,16 +6663,16 @@ footer#footer {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 20px; }
-  .liens_utiles-item {
+  .homepage-content .liens_utiles-item {
     display: -ms-grid;
     display: grid;
     text-align: center;
     width: calc(100% / 6); }
-    .liens_utiles-item a {
+    .homepage-content .liens_utiles-item a {
       padding: 10px;
       text-decoration: none;
       border-radius: 2px; }
-      .liens_utiles-item a:hover {
+      .homepage-content .liens_utiles-item a:hover {
         background-color: #0087CC;
         color: #fff;
         -webkit-transition: background-color 2s ease-out;
@@ -6683,7 +6683,7 @@ footer#footer {
         transition: all 0.5s ease-out;
         -webkit-box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2); }
-        .liens_utiles-item a:hover img {
+        .homepage-content .liens_utiles-item a:hover img {
           -webkit-filter: grayscale(100%) brightness(250%);
           filter: grayscale(100%) brightness(250%);
           -webkit-transition: -webkit-filter 0.5s ease-out;
@@ -6691,7 +6691,7 @@ footer#footer {
           -o-transition: filter 0.5s ease-out;
           transition: filter 0.5s ease-out;
           transition: filter 0.5s ease-out, -webkit-filter 0.5s ease-out; }
-    .liens_utiles-item img {
+    .homepage-content .liens_utiles-item img {
       margin: 0 auto;
       height: 64px;
       padding: 10px; }
