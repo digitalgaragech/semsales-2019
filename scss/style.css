@@ -5891,8 +5891,7 @@ figcaption {
   margin: 0; }
 
 .site {
-  margin: 0;
-  background-color: #F7F7F7; }
+  margin: 0; }
 
 .site-content {
   padding: 0; }
@@ -6590,7 +6589,8 @@ footer#footer {
   margin: 0 0 50px; }
 
 .homepage-content-gray {
-  margin: 0 0 40px; }
+  margin: 0 0 40px;
+  background-color: #F7F7F7; }
 
 .homepage-content__admin {
   margin-bottom: 50px; }
