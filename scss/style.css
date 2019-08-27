@@ -6034,7 +6034,10 @@ input[type="search"],
 input[type="tel"],
 input[type="number"],
 textarea {
-  background: #fff; }
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #eee;
+  margin-top: 5px; }
 
 #documents {
   display: -webkit-box;
