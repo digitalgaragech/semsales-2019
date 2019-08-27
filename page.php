@@ -48,26 +48,4 @@ get_header();?>
 </div><!-- .content-area -->
 
 <?php get_sidebar(); ?>
-<div class="liens_utiles">
-	<?php
-	// Custom query
-	$args = array(
-		'post_type' => 'page',
-		'meta_key'   => 'lien_utile'
-	);
-	$wp_query = new WP_Query( $args );
-	?>
-	<?php if ( have_posts() ) : ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-	<?php $lien_utile = get_post_meta( $post->ID, 'lien_utile', true); ?>
-		<div class="liens_utiles-item">
-		<a href="<?php the_permalink(); ?>">
-			<img src="<?=$lien_utile?>"><br><?php the_title() ?>
-			</a>
-		</div>
-	<?php endwhile ?>
-		<?php wp_reset_postdata(); ?>
-	<?php endif ?>
-</div>
-
 <?php get_footer(); ?>
