@@ -51,8 +51,10 @@
 		  float:left;
 	  }
   }
-  .liens_utiles-item a{
+  .liens_utiles-item figure{
     display: flex;
+    align-items: center;
+    margin: 10px 0;
     font-size: 16px;
     img{
       max-width: 40px;
