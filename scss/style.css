@@ -6589,7 +6589,7 @@ footer#footer {
   margin: 0 0 50px; }
 
 .homepage-content-gray {
-  margin: 0 0 40px;
+  padding: 40px;
   background-color: #F7F7F7; }
 
 .homepage-content__admin {
