@@ -6631,8 +6631,11 @@ footer#footer {
 .sidebar .widget button, .sidebar .widget html input[type="button"], .sidebar .widget input[type="reset"], .sidebar .widget input[type="submit"] {
   width: 100%; }
 
+.iva_bh_shortcode .iva_bhp_hours_row, .ivabh-businesshours .iva_bhp_hours_row {
+  margin: 0; }
+
 .iva_oc_open {
-  display: none; }
+  display: none !important; }
 
 @media (min-width: 992px) {
   #carousel-accueil {
