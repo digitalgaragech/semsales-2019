@@ -15,6 +15,11 @@
  <div class="post-thumbnail inside-banner">
  	<?php the_post_thumbnail( 'insideBanner-size' ); ?>
  </div>
+<?php } else {?>
+
+  <div class="post-thumbnail inside-banner">
+    <img width="1200" height="270" src="http://www.semsales.ch/2019/wp-content/uploads/2019/06/sauvage-1200x270.jpg" class="attachment-insideBanner-size size-insideBanner-size wp-post-image" alt="">
+  </div>
  <?php } ?>
 
  	<div class="site-inner container-fluid">
