@@ -6039,6 +6039,16 @@ textarea {
   border: 1px solid #eee;
   margin-top: 5px; }
 
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  background-color: #0087CC;
+  padding: 1rem 2rem !important;
+  font-weight: 300; }
+
 #documents {
   display: -webkit-box;
   display: -ms-flexbox;

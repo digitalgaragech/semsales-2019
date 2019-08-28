@@ -210,3 +210,10 @@ textarea {
   border: 1px solid #eee;
   margin-top: 5px;
 }
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background-color: $color-theme;
+    padding: 1rem 2rem !important;
+    font-weight: 300;
+}
