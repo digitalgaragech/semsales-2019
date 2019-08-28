@@ -209,11 +209,12 @@ textarea {
   padding: 1em !important;
   border: 1px solid #eee;
   margin-top: 5px;
+  font-weight: 500;
 }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-    background-color: $color-theme;
-    padding: 1rem 2rem !important;
-    font-weight: 300;
+  -webkit-appearance: button;
+  cursor: pointer;
+  background-color: $color-theme;
+  padding: 1rem 2rem !important;
+  font-weight: 300;
 }

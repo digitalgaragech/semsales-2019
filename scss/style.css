@@ -6037,7 +6037,8 @@ textarea {
   background: #fff;
   padding: 1em !important;
   border: 1px solid #eee;
-  margin-top: 5px; }
+  margin-top: 5px;
+  font-weight: 500; }
 
 button,
 html input[type="button"],
@@ -6625,7 +6626,7 @@ footer#footer {
   background-color: #F7F7F7; }
 
 .sidebar .widget p {
-  margin: 0; }
+  margin: 0.5rem 0 0; }
 
 @media (min-width: 992px) {
   #carousel-accueil {
