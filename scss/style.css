@@ -6604,7 +6604,7 @@ footer#footer {
     -ms-flex-align: center;
     align-items: center;
     margin: 10px 0;
-    font-size: 16px; }
+    font-size: 0.9rem; }
     .widget .liens_utiles-item figure img {
       max-width: 40px;
       margin-right: 20px; }
@@ -6626,7 +6626,8 @@ footer#footer {
   margin-bottom: 50px; }
 
 .homepage-content__actus-pilier {
-  margin-bottom: 20px;
+  top: -20px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
