@@ -64,9 +64,11 @@
 					</a>
 				</div><!-- .header-image -->
 
-				
+
 			<? else : ?>
-no pic
+			<div class="header-image">
+					<img src="http://www.semsales.ch/2019/wp-content/uploads/2019/06/sauvage-1200x270.jpg">
+			</div><!-- .header-image -->
 
 			<?php endif; // End header image check. ?>
 		</header><!-- .site-header -->
