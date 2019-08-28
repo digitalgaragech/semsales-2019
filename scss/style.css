@@ -6551,7 +6551,7 @@ footer#footer {
   float: right !important; }
 
 .widget {
-  background-color: #F7F7F7;
+  background-color: #fff;
   border-top: 0;
   list-style-type: none;
   padding: 1rem 1.5rem;
@@ -6608,6 +6608,9 @@ footer#footer {
     .widget .liens_utiles-item figure img {
       max-width: 40px;
       margin-right: 20px; }
+
+.sidebar .widget {
+  background-color: #F7F7F7; }
 
 @media (min-width: 992px) {
   #carousel-accueil {

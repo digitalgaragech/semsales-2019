@@ -1,5 +1,5 @@
 .widget{
-  background-color: $gray-background;
+  background-color: #fff;
   border-top: 0;
   list-style-type: none;
   padding: 1rem 1.5rem;
@@ -61,4 +61,7 @@
       margin-right: 20px;
     }
   }
+}
+.sidebar .widget{
+  background-color: $gray-background;
 }
