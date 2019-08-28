@@ -66,9 +66,8 @@
 
 
 			<? else : ?>
-			<div class="header-image">
-					<img src="http://www.semsales.ch/2019/wp-content/uploads/2019/06/sauvage-1200x270.jpg">
-			</div><!-- .header-image -->
+			<div class="post-thumbnail inside-banner">
+	<img width="1200" height="270" src="http://www.semsales.ch/2019/wp-content/uploads/2019/06/sauvage-1200x270.jpg" class="attachment-insideBanner-size size-insideBanner-size wp-post-image" alt=""></div>
 
 			<?php endif; // End header image check. ?>
 		</header><!-- .site-header -->
