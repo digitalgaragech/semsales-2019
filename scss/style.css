@@ -6287,8 +6287,10 @@ a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 {
 
 h1,
 h1.entry-title {
-  font-size: 1.5rem;
-  margin: 2rem; }
+  font-size: 1.8rem;
+  margin: 2rem;
+  text-transform: uppercase;
+  color: #0087CC; }
 
 h2 {
   font-size: 1.2rem;
