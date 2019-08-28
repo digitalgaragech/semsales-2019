@@ -6624,6 +6624,9 @@ footer#footer {
 .sidebar .widget {
   background-color: #F7F7F7; }
 
+.sidebar .widget p {
+  margin: 0; }
+
 @media (min-width: 992px) {
   #carousel-accueil {
     margin-bottom: -70px; } }
