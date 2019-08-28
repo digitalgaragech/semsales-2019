@@ -6631,6 +6631,9 @@ footer#footer {
 .sidebar .widget button, .sidebar .widget html input[type="button"], .sidebar .widget input[type="reset"], .sidebar .widget input[type="submit"] {
   width: 100%; }
 
+.iva_oc_open {
+  display: none; }
+
 @media (min-width: 992px) {
   #carousel-accueil {
     margin-bottom: -70px; } }
