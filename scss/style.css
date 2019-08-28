@@ -6632,7 +6632,7 @@ footer#footer {
   width: 100%; }
 
 .iva_bh_shortcode .iva_bhp_hours_row, .ivabh-businesshours .iva_bhp_hours_row {
-  padding: 3px; }
+  padding: 3px !important; }
 
 .iva_oc_open {
   display: none !important; }
