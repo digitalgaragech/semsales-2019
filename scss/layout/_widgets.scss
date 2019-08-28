@@ -68,3 +68,9 @@
 .sidebar .widget p{
   margin: 0.5rem 0 0;
 }
+
+.sidebar .widget{
+button, html input[type="button"], input[type="reset"], input[type="submit"]{
+  width: 100%;
+  }
+}

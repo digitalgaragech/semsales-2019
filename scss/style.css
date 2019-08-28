@@ -6628,6 +6628,9 @@ footer#footer {
 .sidebar .widget p {
   margin: 0.5rem 0 0; }
 
+.sidebar .widget button, .sidebar .widget html input[type="button"], .sidebar .widget input[type="reset"], .sidebar .widget input[type="submit"] {
+  width: 100%; }
+
 @media (min-width: 992px) {
   #carousel-accueil {
     margin-bottom: -70px; } }
