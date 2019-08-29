@@ -115,7 +115,7 @@ get_header(); ?>
 		</main><!-- .site-main -->
 	</div>
 </div>
-</div>
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
