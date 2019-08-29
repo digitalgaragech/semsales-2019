@@ -79,7 +79,7 @@ get_header(); ?>
 			<header class="entry-header">
 				<?php
 					the_archive_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            </header>
+      </header>
 			<div class="content-area">
 				<main id="main" class="site-main" role="main">
 					 <div class="row">
@@ -113,7 +113,11 @@ get_header(); ?>
 		?>
 
 		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	</div>
+</div>
+</div>
+</div>
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
