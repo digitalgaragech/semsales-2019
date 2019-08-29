@@ -6050,6 +6050,9 @@ input[type="submit"] {
   padding: 1rem 2rem !important;
   font-weight: 300; }
 
+#actualite .entry hr {
+  margin-bottom: 100px; }
+
 #documents {
   display: -webkit-box;
   display: -ms-flexbox;
