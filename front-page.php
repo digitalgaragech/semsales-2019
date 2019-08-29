@@ -104,7 +104,7 @@ wp_reset_postdata();
 						}
 						wp_reset_query();  // Restore global post data stomped by the_post().
 						?>
-	        	<a class="more-articles" href="category/pilier_public"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a>
+	        	<a class="more-articles" href="category/pilier-public"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a>
 	        </div>
 
 
