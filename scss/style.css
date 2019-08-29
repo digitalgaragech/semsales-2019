@@ -6641,6 +6641,9 @@ footer#footer {
 .iva_oc_open {
   display: none !important; }
 
+footer#footer .ivabh-current-day {
+  color: #fff !important; }
+
 @media (min-width: 992px) {
   #carousel-accueil {
     margin-bottom: -70px; } }
