@@ -104,7 +104,7 @@ wp_reset_postdata();
 						}
 						wp_reset_query();  // Restore global post data stomped by the_post().
 						?>
-	        	<a class="more-articles" href="/pilier_public/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a>
+	        	<a class="more-articles" href="pilier_public"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Tous les articles...</a>
 	        </div>
 
 
@@ -145,7 +145,7 @@ wp_reset_postdata();
 
 						wp_reset_query();  // Restore global post data stomped by the_post().
 				       ?>
-				        <a class="more-articles" href="/category/actualites/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Toutes les actualités...</a> </div>
+				        <a class="more-articles" href="category/actualites/"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Toutes les actualités...</a> </div>
 
 
 
@@ -170,9 +170,8 @@ wp_reset_postdata();
 									<img src="<?=$lien_utile?>"><br><?php the_title() ?>
 									</a>
 								</div>
-
 							<?php endwhile ?>
-									    <?php wp_reset_postdata(); ?>
+						    <?php wp_reset_postdata(); ?>
 							<?php endif ?>
 						</div>
 
